@@ -1,0 +1,117 @@
+:root{
+    --green:#CEE9BE;
+    --shadow : 0 2px 2px rgb(0 0 0/0.5);
+}
+
+body{
+    font-size: 1.2rem;
+    font-family: 'Gabarito', cursive;
+}
+
+.hero ::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/tangan.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: grayscale();
+    
+}
+
+.hero{
+    position: relative;
+    min-height: 100vh;
+
+}
+.hero h1{
+    font-family: 'Sacramento', cursive;
+    font-size: 10rem;
+    color: white;
+}
+
+.hero h4{
+    font-size: 1,6rem;
+    color: white;
+}
+
+.hero p{
+    margin-top: 20px;
+    font-size: 2rem;
+    color: white;
+
+}
+
+.hero h1, .hero h5,.hero h4, .hero p{
+    text-shadow: var(--shadow);
+}
+
+.hero h5{
+    font-size: 2rem;
+}
+
+.hero a{
+    background-color: black;
+    color: white;
+
+}
+
+.hero a:hover{
+    background-color: #2e5716;
+    color: white;
+}
+
+.mynavbar .nav-link{
+    text-transform: uppercase;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title{
+    font-family: 'Sacramento', cursive ;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+
+.tentang h2{
+font-size: 2rem;
+font-weight: semibold;
+text-align: center;
+padding-top: 50px;
+border-bottom: 2 px solid black;
+
+}
+.tentang p{
+    font-family:  'Sacramento', cursive;
+    font-size: 2rem;
+
+}
+
+
+/* media query */
+
+/* laptop */
+@media (max-width:992px){
+    html{
+        font-size: 75%;
+    }
+
+}
+/* tablet */
+@media (max-width:768px){
+    html{
+        font-size: 65%;
+    }
+}
+/* hp */
+@media (max-width:576px){
+    html{
+        font-size: 60%;
+    }
+}
